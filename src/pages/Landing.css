@@ -1,0 +1,164 @@
+/* ============================= */
+/* Landing Layout */
+/* ============================= */
+
+.landing {
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* ---------- CIRCLES ---------- */
+
+.circles {
+  position: relative;
+  height: 38vh;               /* responsive height */
+  min-height: 220px;
+  max-height: 320px;
+}
+
+.circle {
+  width: 34px;
+  height: 34px;
+  background-color: #e6aa00;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+/* Base (Mobile first) — relative diagonal layout */
+.circle-6 { top: 10%; left: 20%; }
+.circle-1 { top: 28%; left: 35%; }
+.circle-2 { top: 42%; left: 40%; }
+.circle-3 { top: 56%; left: 50%; }
+.circle-4 { top: 70%; left: 60%; }
+.circle-5 { top: 84%; left: 70%; }
+
+/* ---------- BOTTOM CONTENT ---------- */
+
+.bottomContent {
+  margin-top: auto;
+  padding-bottom: 12px;
+}
+
+.bottomContent h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.bottomContent p {
+  font-size: 14px;
+  color: #7c7c7c;
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.create,
+.login {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.create {
+  background-color: #6c25ff;
+  color: #ffffff;
+}
+
+.login {
+  background-color: #ede4ff;
+  color: black;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+/* ============================= */
+/* Small Mobile (≤ 360px) */
+/* ============================= */
+
+@media (max-width: 360px) {
+  .circles {
+    height: 32vh;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .bottomContent h1 {
+    font-size: 22px;
+  }
+}
+
+/* ============================= */
+/* Tablet (≥ 768px) */
+/* ============================= */
+
+@media (min-width: 768px) {
+  .landing {
+    padding: 24px;
+  }
+
+  .circles {
+    height: 34vh;
+    max-height: 360px;
+  }
+
+  .circle {
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+  }
+
+  .bottomContent h1 {
+    font-size: 28px;
+  }
+
+  .bottomContent p {
+    font-size: 15px;
+  }
+}
+
+/* ============================= */
+/* Desktop (≥ 1024px) */
+/* ============================= */
+
+@media (min-width: 1024px) {
+  .landing {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .circles {
+    height: 300px;
+  }
+
+  .bottomContent h1 {
+    font-size: 30px;
+  }
+}
+
+/* ============================= */
+/* Large Desktop (≥ 1440px) */
+/* ============================= */
+
+@media (min-width: 1440px) {
+  .landing {
+    max-width: 560px;
+  }
+}

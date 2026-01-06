@@ -1,0 +1,101 @@
+/* ============================= */ /* ROOT / PAGE WRAPPER */ /* ============================= */
+.profile {
+  width: 100%;
+  min-height: 100vh; /* full screen height */
+  background-color: #f9fafb;
+  padding: 16px;
+  box-sizing: border-box;
+} /* ============================= */ /* ACCOUNT SETTINGS CARD */ /* ============================= */
+.settings-card {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+} /* Header inside settings card */
+
+
+
+.settings-card .profile-header {
+  width: 100%;
+  min-height: 70px;          
+  font-size: 20px;
+  font-weight: 600;
+  padding: 14px 10px;        
+  background-color: #f3f4f6;
+  color: #111827;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* ============================= */ /* PROFILE INFO CARD */ /* ============================= */
+.profile-card-wrapper {
+  width: 100%;
+  margin-top: 16px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  box-sizing: border-box;
+} /* ============================= */ /* PROFILE CARD ROW */ /* ============================= */
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed #d1d5db;
+} /* ============================= */ /* AVATAR */ /* ============================= */
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #e5e7eb;
+  object-fit: cover;
+} /* Lock badge on avatar */
+.profile-avatar-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  background-color: #7c3aed;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 12px;
+  border: 2px solid #ffffff;
+} /* ============================= */ /* PROFILE INFO */ /* ============================= */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.profile-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+.profile-email {
+  font-size: 14px;
+  color: #6b7280;
+} /* ============================= */ /* BIO */ /* ============================= */
+.profile-bio {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #4b5563;
+} /* ============================= */ /* RESPONSIVE SAFE */ /* ============================= */
+@media (max-width: 480px) {
+  .profile-avatar {
+    width: 64px;
+    height: 64px;
+  }
+  .profile-name {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,42 @@
+.screen {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.mobile {
+  width: 360px;
+  height: 740px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  display: flex;
+}
+
+
+/* ---------- Tablet ---------- */
+@media (min-width: 768px) {
+  .mobile {
+    max-width: 400px;
+    height: 760px;
+  }
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 1024px) {
+  .mobile {
+    max-width: 420px;
+    height: 780px;
+  }
+}
+
+/* ---------- Very small phones ---------- */
+@media (max-height: 700px) {
+  .mobile {
+    height: 100vh;
+    border-radius: 0;
+  }
+}
