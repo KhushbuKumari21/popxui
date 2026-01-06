@@ -12,6 +12,11 @@
 /* Body */
 /* ============================= */
 
+html, body {
+  height: 100%;
+  overflow: hidden; /* prevent page scroll */
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background: #ffffff;
@@ -25,7 +30,13 @@ body {
   width: 100%;
   max-width: 420px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 16px;
+  height: 80vh;                 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start      
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* ============================= */
@@ -35,11 +46,11 @@ body {
 h2 {
   font-size: 22px;
   font-weight: 600;
-  margin-top: 24px;
+  margin-top: 16px;  /* reduced */
 }
 
 p {
-  margin: 8px 0 24px;
+  margin: 6px 0 16px; /* reduced */
   color: #7c7c7c;
   font-size: 14px;
   line-height: 1.4;
@@ -50,7 +61,7 @@ p {
 /* ============================= */
 
 .field {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 label {
@@ -62,7 +73,7 @@ label {
 input {
   width: 100%;
   height: 44px;
-  margin: 6px 0 16px;
+  margin: 6px 0 12px; /* reduced */
   padding: 0 12px;
   border: 1px solid #d1d1d1;
   border-radius: 6px;
@@ -102,7 +113,7 @@ button:not(:disabled) {
 
 @media (max-width: 360px) {
   .loginContainer {
-    padding: 0 12px;
+    padding: 12px;
   }
 
   h2 {
@@ -126,7 +137,7 @@ button:not(:disabled) {
 @media (min-width: 768px) {
   .loginContainer {
     max-width: 500px;
-    padding: 0 24px;
+    padding: 20px;
   }
 
   h2 {
